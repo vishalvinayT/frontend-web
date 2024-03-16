@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Restaurant</title>
+        <meta charset="UTF-8">
+        <meta name="owner" content="Vishal">
+        <meta name="title" content="Little Restaurant">
+        <meta name="description" content="This restaurant has continental cousine with taste." >
+        <meta name="googlebot" content="notranslate">
+        <!-- <meta http-equiv="refresh" content="30"> -->
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="og:title" content="Little Restaurant">
+        <meta name="og:type" content="website">
+        <meta name="og:url" content="https://localhost:5500">
+        <meta name="og:img" content="./resources/logo.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4" style="display: inline;" >
+                        <figure>
+                            <img src="./resources/logo.png" style="width:200px; height: 200px;" alt="restaurant logo">
+                            <!-- <figcaption class="text-center"><sub><b>Continental</b></sub></figcaption> -->
+                        </figure>
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        <h2>Little Restaurant</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <nav>
+                        <a href="home.html">Home</a>
+                        <a href="register.html">Register</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <h4><hr>About Us</h4>
+                        </div>
+                        <div>
+                            <p>From traditional Indian chai to freshly prepared curry, you will find what you are looking for in the Continent restaurant. Look forward to a variety of delicacies and dishes from our large Indian buffet, which changes daily. There is also an all-you-can-eat salad and dessert bar. You can also order your personal favorite dish à la carte, as well as many other house specialties - including vegetarian and vegan ones.</p>
+                            <p>For special events we offer you a catering service in Karlsruhe and the surrounding area. You can also rent the entire first floor of the restaurant for your events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <h4><hr>Book Table</h4>
+                        </div>
+                    </div>
+                </div>
+                <form method="post" action="./booking">
+                    <div class="row" id="break">
+                        <div class="col-6 text-center">
+                            <label for="name" id="tableRes">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="col-6 text-center">
+                            <label for="Phone" id="tableRes">Phone</label>
+                            <input type="tel" id="phone" pattern="[7-9]{1}[0-9]{9}" required>
+                        </div>
+                    </div>
+                    <div class="row" id="break">
+                        <div class="col-6 text-center">
+                            <label for="table" id="tableRes">Table Seats</label>
+                            <fieldset id="table" style="display: inline;">
+                                <input type="radio" id="2t" name="table" value="2">
+                                <label for="2t">2 Person<br></label>
+                                
+                                <input type="radio" id="4t" name="table" value="4">
+                                <label for="4t">4 Person</label>
+                    
+                                <input type="radio" id="6t" name="table" value="6">
+                                <label for="6t">6 Person</label>
+                            </fieldset>
+                        </div>
+                        <div class="col-6 text-center">
+                            <label for="location" id="tableRes">Location</label>
+                            <input name="location" list="locs" required>
+                            <datalist id="locs">
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="secundrabad">Secundrabad</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">chennai</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <input type="submit" class="btn btn-primary " value="Submit"> 
+                        </div>
+                    </div>
+                </form> 
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h4><hr>Our Menu</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <img src="./resources/chiken_bir.jpg"  alt="Los Angeles" style="width:100%; height:500px;">
+                              </div>
+                        
+                              <div class="item">
+                                <img src="./resources/veg_bir.jpg" alt="Chicago"  style="width:100%; height:500px;">
+                              </div>
+                            
+                              <div class="item">
+                                <img src="./resources/curry.jpg" alt="New york"  style="width:100%; height:500px;">
+                              </div>
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>  
+                    </div>
+                    </div>
+                </div>
+
+
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div>
+                            <h4><hr>Contact</h4>
+                            <p>Vishal<br>Jena,<br>Germany</p>
+                            <small>Copyright@2024</small>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </footer>
+    </body>
+</html>
