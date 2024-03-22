@@ -38,4 +38,28 @@
 .contact{
     flex-shrink: 1;
 }
-
+.dish-ratings{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.chicken-rice{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: green;
+}
+.veg-curry{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0.5;
+    background-color: yellow;
+}
+.salad{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    background-color: red;
+}
