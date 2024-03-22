@@ -4,3 +4,38 @@
 #break{
     padding-bottom: 20px;
 }
+
+.flex-cont{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-image{
+    flex-shrink: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.company-name{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.flex-cont-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.home{
+    display: flex;
+    justify-content:flex-start;
+    padding-right:2%;
+}
+.register{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.contact{
+    flex-shrink: 1;
+}
+
